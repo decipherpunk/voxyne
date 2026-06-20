@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "voxyne: a tiny byte-level conversational language model"
+authors:
+  - family-names: Ramakrishnan
+    email: human@setc.dev
+    orcid: "https://orcid.org/0009-0006-0905-7275"
+version: 0.1.0
+license: Apache-2.0
+repository-code: "https://github.com/DecipherPunk/voxyne"
+keywords:
+  - byte-level
+  - language-model
+  - conversational
+  - rahuketu

@@ -1,0 +1,7 @@
+# Dev/test tools:  pip install -r requirements-dev.txt
+# Runtime deps (torch, numpy) install with the project. For a CPU-only torch use
+# the PyTorch index (the +cpu wheels are not on PyPI):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+# Pinned versions used in development: torch 2.12.1+cpu, numpy 2.4.6
+pytest==9.1.1
+ruff==0.15.18

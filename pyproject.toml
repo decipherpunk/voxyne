@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "voxyne"
+version = "0.1.0"
+description = "A tiny byte-level conversational language model with the RahuKetu sigma_K channel."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "Ramakrishnan", email = "human@setc.dev" }]
+keywords = ["byte-level", "language-model", "conversational", "rahuketu", "voxyne"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["torch>=2.1", "numpy>=1.24"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[project.urls]
+Homepage = "https://github.com/DecipherPunk/voxyne"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/voxyne"]
+
+[tool.ruff]
+line-length = 100
