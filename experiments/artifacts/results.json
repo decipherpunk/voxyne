@@ -1,0 +1,106 @@
+{
+  "byte_sigmaK": {
+    "fp32_ppl": 2.0067,
+    "int8": {
+      "ppl": 2.0067,
+      "pct_increase": -0.0
+    },
+    "int4_naive": {
+      "ppl": 2.0242,
+      "pct_increase": 0.87
+    },
+    "int4_greedy_identical": {
+      "who are you?": {
+        "identical": false
+      },
+      "hello": {
+        "identical": true
+      }
+    }
+  },
+  "int2_probe": {
+    "int2_naive": {
+      "ppl": 138.1403,
+      "pct_increase": 6783.92
+    },
+    "int2_zerofree": {
+      "ppl": 65.1864,
+      "pct_increase": 3148.42
+    },
+    "int2_residual_x2": {
+      "ppl": 2.6283,
+      "pct_increase": 30.97
+    },
+    "int2_residual_x3": {
+      "ppl": 2.0436,
+      "pct_increase": 1.84
+    }
+  },
+  "token_models": {
+    "gpt2": {
+      "arch": "conv1d",
+      "fp16_wikitext_ppl": 30.8286,
+      "fp16_passages_ppl": 18.5782,
+      "schemes": {
+        "naive_int4": {
+          "wikitext_ppl": 6234.2564,
+          "pct_increase": 20122.3
+        },
+        "asym_int4": {
+          "wikitext_ppl": 2912.3746,
+          "pct_increase": 9347.0
+        },
+        "table_fp16_body_int4": {
+          "wikitext_ppl": 36.7371,
+          "pct_increase": 19.2
+        }
+      }
+    },
+    "smollm2-135m": {
+      "arch": "llama",
+      "fp16_wikitext_ppl": 16.8094,
+      "fp16_passages_ppl": 7.5294,
+      "schemes": {
+        "naive_int4": {
+          "wikitext_ppl": 51.7342,
+          "pct_increase": 207.8
+        },
+        "asym_int4": {
+          "wikitext_ppl": 43.3357,
+          "pct_increase": 157.8
+        },
+        "table_fp16_body_int4": {
+          "wikitext_ppl": 31.1081,
+          "pct_increase": 85.1
+        },
+        "gptq_int4": {
+          "wikitext_ppl": 19.5768,
+          "pct_increase": 16.5
+        }
+      }
+    },
+    "smollm2-360m": {
+      "arch": "llama",
+      "fp16_wikitext_ppl": 12.7823,
+      "fp16_passages_ppl": 5.7643,
+      "schemes": {
+        "naive_int4": {
+          "wikitext_ppl": 221.4332,
+          "pct_increase": 1632.3
+        },
+        "asym_int4": {
+          "wikitext_ppl": 36.4632,
+          "pct_increase": 185.3
+        },
+        "table_fp16_body_int4": {
+          "wikitext_ppl": 21.2265,
+          "pct_increase": 66.1
+        },
+        "gptq_int4": {
+          "wikitext_ppl": 13.866,
+          "pct_increase": 8.5
+        }
+      }
+    }
+  }
+}

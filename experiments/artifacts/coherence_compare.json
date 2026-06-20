@@ -1,0 +1,120 @@
+{
+  "prompts": [
+    "hi",
+    "how are you?",
+    "tell me about yourself",
+    "what do you like to do?",
+    "i'm feeling sad today",
+    "can you help me with something?",
+    "tell me a short story",
+    "what is your favorite season?",
+    "i had a long day",
+    "cheer me up",
+    "what should i cook for dinner?",
+    "goodbye"
+  ],
+  "summary": {
+    "voxyne_fp32": {
+      "repetition": 0,
+      "garbled": 0,
+      "n": 12,
+      "avg_len": 38.6
+    },
+    "voxyne_int4_naive": {
+      "repetition": 0,
+      "garbled": 0,
+      "n": 12,
+      "avg_len": 38.3
+    },
+    "smollm_instruct_fp16": {
+      "repetition": 1,
+      "garbled": 0,
+      "n": 12,
+      "avg_len": 210.2
+    },
+    "smollm_instruct_int4_naive": {
+      "repetition": 10,
+      "garbled": 0,
+      "n": 12,
+      "avg_len": 188.3
+    },
+    "smollm_instruct_gptq": {
+      "repetition": 0,
+      "garbled": 0,
+      "n": 12,
+      "avg_len": 77.2
+    }
+  },
+  "outputs": {
+    "voxyne_fp32": {
+      "hi": "Hi! How can I help?",
+      "how are you?": "I'm doing well, thanks. How can I help?",
+      "tell me about yourself": "I'm Voxyne, a tiny byte-level AI assistant created by Ra",
+      "what do you like to do?": "I like to read, listen to music, and spend time with my ",
+      "i'm feeling sad today": "I know you do. I'm sorry to hear that. What's going on?\u0001",
+      "can you help me with something?": "Sure, what is it?",
+      "tell me a short story": "Once upon a time, there was a young woman named Alex who",
+      "what is your favorite season?": "I love spring and summer. I love the way the sun sets ov",
+      "i had a long day": "I had a long day.",
+      "cheer me up": "Hello! What can I help you with?",
+      "what should i cook for dinner?": "You can cook for dinner at home at home.",
+      "goodbye": "Goodbye! Take care."
+    },
+    "voxyne_int4_naive": {
+      "hi": "Hi! How can I help?",
+      "how are you?": "I'm good. How are you?",
+      "tell me about yourself": "I'm Voxyne, a tiny byte-level AI assistant created by Ra",
+      "what do you like to do?": "I like to read, listen to music, and go on walks.\u0001endtur",
+      "i'm feeling sad today": "I'm feeling a little better today.",
+      "can you help me with something?": "Sure, what is it?",
+      "tell me a short story": "Once upon a time, there was a young woman named Alex who",
+      "what is your favorite season?": "I love spring and summer. I love summer and winter.\u0001endt",
+      "i had a long day": "I was there in a long day.",
+      "cheer me up": "Hello! I'm Voxyne, created by Ramakrishnan.",
+      "what should i cook for dinner?": "You can cook for dinner in a variety of ways, but if you",
+      "goodbye": "Goodbye! Take care."
+    },
+    "smollm_instruct_fp16": {
+      "hi": "hi there! how can i help you today?",
+      "how are you?": "I'm a helpful AI assistant named SmolLM, trained by Hugging Face. I'm here to assist you in various ways, from providing information and answering questions to offering guidance and support. Whether you're looking for advice on a specific topic or seeking help with a particular task",
+      "tell me about yourself": "I am a highly skilled AI assistant, designed to assist users in various aspects of their lives. My primary function is to provide information, answer questions, and offer guidance on a wide range of topics. I am capable of understanding and processing a vast amount of information, including technical terms",
+      "what do you like to do?": "I'm a versatile AI assistant, and I can do just about anything. I love helping people find their way around, making decisions, and solving problems. I'm also a great listener, so I can offer advice and insights to help you navigate your life.\n\nI'm",
+      "i'm feeling sad today": "I'm sorry for the loss of your friend. It's a bittersweet moment, as you're going through a tough time. Please know that you're not alone, and I'm here to support you. If you need any help or have any questions, feel free to",
+      "can you help me with something?": "I'm sorry for the confusion, but as a chatbot, I don't have the capability to assist with tasks related to your personal life. I'm here to help with general queries or problems related to technology, but I'm not equipped to provide assistance with personal matters.",
+      "tell me a short story": "I'm thrilled to share a short story with you all! This tale follows a young woman named Maya who discovers a mysterious box in her attic. As she opens the box, she finds a small, intricately carved wooden box with a strange symbol etched into its lid. The symbol",
+      "what is your favorite season?": "My favorite season is always the one that I love the most. I think it's the one that's always the most unpredictable, but also the most exciting. There's something about the unpredictability of the weather, the unpredictability of the sun, and the unpredictability of the",
+      "i had a long day": "I'm sorry for the confusion, but as a chatbot, I don't have the ability to provide detailed information about your day. I'm here to assist you with any queries or help with your needs. If you're having trouble with something, feel free to ask, and",
+      "cheer me up": "I'm here to help you feel better and more confident. If you're feeling down, it's okay to ask for help. You're not alone, and I'm here to support you.",
+      "what should i cook for dinner?": "For dinner, I recommend a hearty and comforting meal that's perfect for a warm evening. Here's a simple yet delicious recipe:\n\n**Grilled Chicken and Steamed Vegetables**\n\nIngredients:\n\n* 2 boneless, skinless chicken breasts\n*",
+      "goodbye": "goodbye"
+    },
+    "smollm_instruct_int4_naive": {
+      "hi": "hi",
+      "how are you?": "I am Hugga, a kind, helpful, and kind, kind, kind, kind, kind, kind, kind, kind, kind, kind, kind, kind, kind, kind, kind, kind, kind, kind, kind, kind, kind, kind,",
+      "tell me about yourself": "I'm a weary traveler, and I've just arrived in the bustling city of Sorrow. My name is Zara and I'm a weary traveler, and I've just just arrived in the city of Sorrow. My name is Zara and I'm a weary traveler,",
+      "what do you like to do?": "You're here to assist in the most opportunous situation, seeking assistance in the most opportunous situation, seeking assistance in the most opportunous situation, seeking assistance, seeking assistance, seeking assistance, seeking assistance, seeking assistance, seeking assistance, seeking assistance, seeking assistance, seeking assistance",
+      "i'm feeling sad today": "Dear, I was just the day after the funeral, and the sadness and the pain and the sadness and the pain and the sadness and the sadness and the sadness and the sadness and the sadness and the sadness and the sadness and the sadness and the sadness and the sadness and the sadness",
+      "can you help me with something?": "I'm here to assist you in finding the perfect remedy for the constipation you're in the vicinity of, and I'm here to help you find and get rid of the constipation, and I assure you will be here, and I will be here, and I will be here,",
+      "tell me a short story": "Title: The Lost and the Lost\n\nTitle: The Lost and the Lost\n\nTitle: The Lost and the Lost\n\nTitle: The Lost and the Lost\n\nTitle: The Lost and the Lost\n\nTitle: The Lost and the Lost\n\nTitle:",
+      "what is your favorite season?": "My favorite season, and the one I love, is the one we call the golden years. It's the golden years, and the years are golden, and the years are golden, and the years are golden, and the years are golden, and the years are golden, and",
+      "i had a long day": "i wasnt able to find my way and wasnt able to find my way and wasnt able to find my way and wasnt able to find my way and wasnt able to find my way and wasnt able to find my way and wasnt able to find my way",
+      "cheer me up": "I'm feeling the scurvy and I'm glad I'm here to help you out. I'm feeling the scurvy and I need you to help me out there. I'm feeling the scurvy and I need you to help me out there. I'm feeling the scurvy",
+      "what should i cook for dinner?": "You're leaning for dinner, I think, and I'm leaning for the best, and I think, and I think, and I think, and I think, and I think, and I think, and I think, and I think, and I think, and I think",
+      "goodbye": "goodbye"
+    },
+    "smollm_instruct_gptq": {
+      "hi": "Hello, I'm here to help with your math problems.",
+      "how are you?": "I'm a helpful AI assistant named SmolLM, trained by Hugging Face.",
+      "tell me about yourself": "I'm a helpful AI assistant named SmolLM, trained by Hugging Face.",
+      "what do you like to do?": "I like to learn and explore the world around me.",
+      "i'm feeling sad today": "I'm sorry for the confusion. I'm sorry for the sadness you're feeling today.",
+      "can you help me with something?": "I'm sorry for any confusion. I'm here to assist you with any mathematical or programming-related issues.",
+      "tell me a short story": "\"The story is about a man who discovers a hidden world within the walls of a mysterious library.",
+      "what is your favorite season?": "My favorite season is the one that is the most challenging to understand and the most difficult to solve.",
+      "i had a long day": "I'm sorry for the confusion. I'm sorry for the confusion. I'm here to assist you in any way.",
+      "cheer me up": "I'm glad you're here, and I'm happy to help you with your math and science.",
+      "what should i cook for dinner?": "I'm so sorry to hear you're in need of some advice.",
+      "goodbye": "Hello!\n\nI'm sorry for the confusion. I'm a helpful AI assistant named SmolLM, trained by Hugging Face."
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "generated_utc": "2026-06-20T11:06:28Z",
+  "seed": 0,
+  "device": "cuda",
+  "gpu": "NVIDIA A40",
+  "python": "3.12.3",
+  "torch": "2.8.0+cu128",
+  "byte_checkpoint": "/workspace/voxyne-rk-infer.pt",
+  "byte_params": 128766210,
+  "token_models": [
+    "gpt2",
+    "HuggingFaceTB/SmolLM2-135M",
+    "HuggingFaceTB/SmolLM2-360M"
+  ],
+  "eval_corpora": {
+    "passages": 5,
+    "wikitext2": "Salesforce/wikitext wikitext-2-raw-v1 test (parquet)"
+  },
+  "quant_settings": {
+    "group_size": 128,
+    "naive": "symmetric RTN",
+    "gptq_bits": 4,
+    "gptq_group": 128,
+    "metric": "relative perplexity increase, % over fp32/fp16"
+  },
+  "notes": "GPT-2 Conv1D not supported by GPTQ tooling; uses naive/asym/table-fp16 only.",
+  "transformers": "5.12.1",
+  "gptqmodel": "7.1.0"
+}

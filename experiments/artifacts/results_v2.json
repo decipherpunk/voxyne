@@ -1,0 +1,106 @@
+{
+  "corpus": "wikitext-2-raw test",
+  "metric": "bits_per_byte",
+  "byte_identity_v2": {
+    "fp32_bpb": 1.5443,
+    "int8": {
+      "bpb": 1.5445,
+      "pct": 0.02
+    },
+    "int4_naive": {
+      "bpb": 1.5615,
+      "pct": 1.11
+    }
+  },
+  "int2_ablation": {
+    "int2_naive": {
+      "bpb": 8.1141,
+      "pct": 425.43
+    },
+    "int2_resid_ordinary_x2": {
+      "bpb": 1.854,
+      "pct": 20.06
+    },
+    "int2_resid_zerofree_x2": {
+      "bpb": 1.6654,
+      "pct": 7.85
+    },
+    "int2_resid_ordinary_x3": {
+      "bpb": 1.5864,
+      "pct": 2.73
+    },
+    "int2_resid_zerofree_x3": {
+      "bpb": 1.5916,
+      "pct": 3.06
+    }
+  },
+  "token_models": {
+    "gpt2": {
+      "arch": "conv1d",
+      "fp16_bpb": 1.0752,
+      "schemes": {
+        "naive_int4": {
+          "bpb": 2.7422,
+          "pct": 155.0
+        },
+        "asym_int4": {
+          "bpb": 2.5099,
+          "pct": 133.4
+        },
+        "table_fp16_body_int4": {
+          "bpb": 1.1321,
+          "pct": 5.3
+        }
+      }
+    },
+    "smollm2-135m": {
+      "arch": "llama",
+      "fp16_bpb": 0.9675,
+      "schemes": {
+        "naive_int4": {
+          "bpb": 1.3683,
+          "pct": 41.4
+        },
+        "asym_int4": {
+          "bpb": 1.3087,
+          "pct": 35.3
+        },
+        "table_fp16_body_int4": {
+          "bpb": 1.1899,
+          "pct": 23.0
+        },
+        "gptq_int4_train_calib": {
+          "bpb": 1.0367,
+          "pct": 7.2
+        }
+      }
+    },
+    "smollm2-360m": {
+      "arch": "llama",
+      "fp16_bpb": 0.8662,
+      "schemes": {
+        "naive_int4": {
+          "bpb": 1.9034,
+          "pct": 119.7
+        },
+        "asym_int4": {
+          "bpb": 1.2429,
+          "pct": 43.5
+        },
+        "table_fp16_body_int4": {
+          "bpb": 1.049,
+          "pct": 21.1
+        },
+        "gptq_int4_train_calib": {
+          "bpb": 0.9038,
+          "pct": 4.3
+        }
+      }
+    }
+  },
+  "runtime_byte_fp32": {
+    "device": "cuda",
+    "steps_per_sec": 230.1,
+    "ms_per_step": 4.35
+  }
+}

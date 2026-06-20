@@ -1,0 +1,22 @@
+{
+  "generated_utc": "2026-06-20T11:33:10Z",
+  "subject": "identity_v2 (released voxyne)",
+  "byte_checkpoint": "/workspace/runs/identity_v2/voxyne-best.pt",
+  "byte_checkpoint_sha256": "e8864b5130f7d517f8bab553b879646bfc284db7bb6b26d72ab8331a7a94247a",
+  "byte_params": 128766210,
+  "seed": 0,
+  "device": "cuda",
+  "gpu": "NVIDIA A40",
+  "python": "3.12.3",
+  "torch": "2.8.0+cu128",
+  "corpus": "Salesforce/wikitext wikitext-2-raw-v1 test (full)",
+  "corpus_bytes": 1293436,
+  "metric": "bits per byte; pct = increase vs each model's own fp baseline",
+  "gptq_calibration": "wikitext-2-raw TRAIN split (disjoint from eval test) -- no leakage",
+  "quant": {
+    "group_size": 128
+  },
+  "notes": "byte and token models evaluated on the same text; bpb normalizes token NLL by bytes.",
+  "transformers": "5.12.1",
+  "gptqmodel": "7.1.0"
+}
